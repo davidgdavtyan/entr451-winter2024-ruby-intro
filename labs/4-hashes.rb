@@ -29,4 +29,15 @@ bitcoin = gets.chomp
 bitcoin = bitcoin.to_f
 
 # 3. inspect the bitcoin_data hash
-# puts bitcoin_data
+#puts bitcoin_data
+
+# dig through bitcoin_data to find the conversion rate 
+conversion_rate = bitcoin_data["bpi"]["USD"]["rate_float"]
+
+# put the conversion rate on screen
+puts "Conversion rate: #{conversion_rate}"
+
+# multiply the conversion rate by the number of bitcoin
+puts "Value of bitcoin: #{conversion_rate*bitcoin}"
+
+# write the value of user's bitcoin to screen

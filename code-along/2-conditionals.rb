@@ -13,3 +13,35 @@
 # Elsif Conditional Logic
 
 # Combining Expressions
+
+# # input
+# favorite_food = "tacos"
+# lunch = "tacos" 
+
+# # output
+# if lunch == favorite_food
+#     puts "yay"
+# end
+
+# our_team_score = 5
+# other_team_score = 7
+
+# if our_team_score > other_team_score
+#     puts "You win!"
+# elsif our_team_score == other_team_score
+#     puts "You tied!" 
+# else 
+#     puts "You lose!"
+# end
+
+temperature = 32
+precip = 100
+
+if temperature > 60 && precip == 0
+    puts "Nice!" 
+elsif temperature > 60 && precip > 0
+    puts "sad trombone"
+else 
+    puts "it's gross"
+end
+
